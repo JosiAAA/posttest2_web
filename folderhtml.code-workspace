@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../folderhtml"
+		},
+		{
+			"path": "../vscodeper2"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Fonts"
+		},
+		{
+			"path": "../tesjs"
+		},
+		{
+			"path": "../../../../Downloads/putut"
+		},
+		{
+			"path": "../../../../Downloads/TugasWebPHP"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Josia_Postest_1_CardCollector"
+	}
+}

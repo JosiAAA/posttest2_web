@@ -1,0 +1,821 @@
+
+/* css home.html */
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ #halaman_home {
+   max-width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(./bgmarvel.jpeg);
+   
+    background-size: cover;
+    background-repeat: repeat;
+    /* background-position: left; */
+    background-position: center;
+  }
+  #header_home {
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul li a {
+    color: #580909;
+    background-color: #00000081;
+    font-size: 30px;
+    font-family: 'fontbaru', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    
+    cursor: pointer;
+  }
+  nav ul li a:hover {
+    
+    background-color: #36383a70;
+    color: #fff;
+    padding-bottom: 10px;
+    transition: font-size 0.3s ease-in-out;
+    font-size: 32px;
+  }
+  nav ul li a#home_button {
+    background-color: #36383a70;
+    color: #fff;
+    padding-bottom: 10px;
+  }
+  nav ul li a#login_button {
+    background-color: #36383a70;
+    color: #fff;
+    padding-bottom: 10px;
+    margin-left: 40px;
+  }
+  nav ul li a#login_button_home {
+   
+    padding-bottom: 10px;
+    margin-left: 40px;
+  }
+  nav ul li a#login_button_regis {
+   
+    padding-bottom: 10px;
+    margin-left: 40px;
+  }
+  nav ul li a#register_button {
+    background-color: #36383a70;
+    color: #fff;
+    padding-bottom: 10px;
+  }
+  nav ul li a#gacha_button {
+    background-color: #36383a70;
+    color: #fff;
+    padding-bottom: 10px;
+    margin-left: 40px;
+  }
+  nav ul li a#gacha_koleksi {
+    
+    padding-bottom: 10px;
+    margin-left: 70px;
+  }
+  nav ul li a#koleksi {
+    background-color: #36383a70;
+    color: #fff;
+    padding-bottom: 10px;
+    margin-left: 40px;
+  }
+  nav ul li a#koleksi:hover {
+    background-color: #00000081;
+    color: #580909;
+  }
+  nav ul li a#home_button:hover {
+    background-color: #00000081;
+    color: #580909;
+    
+  }
+  nav ul li a#login_button:hover {
+    background-color: #00000081;
+    color: #580909;
+    
+  }
+  nav ul li a#register_button:hover {
+    background-color: #00000081;
+    color: #580909;
+    
+  }
+  nav ul li a#gacha_button:hover {
+    background-color: #00000081;
+    color: #580909;
+    
+  }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  .intro {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  
+  .play-btn {
+    background-color: #00000081;
+    font-family: 'fontbaru', sans-serif;
+    background: linear-gradient(to right, #5e0606, #a72222);
+    
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .play-btn:hover {
+    background-color: #36383a70;
+    color: #fff;
+    transition: font-size 0.3s ease-in-out;
+    font-size: 32px;
+  
+  }
+  .konten {
+   
+    margin-bottom: 50px;
+}
+.konten h2 {
+ font-family:'Times New Roman', Times, serif;
+ text-shadow: 3px 3px 6px black;
+font-size: 2em;
+margin-bottom: 20px;
+color:white;
+}
+.konten h2:hover {
+  transition: font-size 0.3s ease-in-out;
+  font-size: 2.2em;
+  
+ }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* atur durasi dan jenis animasi */
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* gunakan animasi fadeInUp untuk elemen h2 */
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+
+
+.konten ul {
+list-style: none;
+font-size: 1.2em;
+line-height: 1.6;
+margin-bottom: 20px;
+transition: font-size 0.3s ease-in-out;
+  
+}
+.konten ul:hover {
+  
+  transition: font-size 0.3s ease-in-out;
+    font-size: 1.3em;
+  }
+.konten ul li {
+    font-family: "";
+    color: white;
+    text-shadow: 3px 3px 6px black;
+
+
+}
+
+main .intro h1
+{
+    margin-top: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'fontbaru', sans-serif;
+   color: #6e0f0f;
+    /* background-color: black; */
+    padding-right: -0px;
+    font-size: 3em;
+  }
+  main .intro h1:hover
+{
+  transition: font-size 0.3s ease-in-out;
+  
+  font-size: 3.1em;
+  }
+
+  @font-face {
+    font-family: 'fontbaru';
+    src: url('KungFuMaster-K7vrX\ .otf');
+       
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .text-timbul {
+    position: relative;
+    animation: timbul 0.8s forwards;
+    opacity: 0;
+  }
+
+  @keyframes timbul {
+    to {
+      transform: translateY(-20px);
+      opacity: 1;
+    }
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* sesuaikan dengan tinggi footer Anda */
+    background-color: #111111; /* sesuaikan dengan warna background footer Anda */
+    color: #fff; /* sesuaikan dengan warna teks footer Anda */
+    text-align: center;
+    padding-top: 10px;
+  }
+ 
+  footer p{
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow:3px 3px 6px #000000;
+    color:white;
+  }
+  .kartu {
+    display: flex;
+    width: 300px;
+    padding-left: 0%;
+  }
+ 
+
+
+.kartu h2 {
+
+font-size: 10px;
+margin-bottom: 20px;
+}
+.kartu img {
+width: 33.33%;
+float: left;
+margin-bottom: 20px;
+}
+
+/* end of line  */
+
+/* halaman login */
+#halaman_login{
+    max-width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(./bgmarvel.jpeg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center top;
+  }
+  
+  form {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    
+  }
+  label[for="password"],label[for="username"]{
+    text-shadow: 5px 5px 6px #000000;
+    font-family:'fontbaru', sans-serif ;
+    letter-spacing: 2px;
+    color:white;
+   
+    display: block;
+    margin-bottom: 10px;
+  }
+  label[for="showpass"] {
+    color: rgb(233, 233, 233);
+    font-size: 15px;
+  }
+  
+
+  
+  
+  input[type="text"],
+  input[type="password"] {
+    font-family: 'fontbaru', sans-serif;
+   
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+   
+  
+  input[type="submit"] {
+    font-family: 'fontbaru', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-shadow: 2px 2px 5px #333;
+    background-color: #5e0606;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover{
+    background-color: #fff;
+    color: #000000;
+  }
+ 
+  #header_login {
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+  #header_koleksi{
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+  #error-message {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  #error-message.show {
+    display: block;
+  }
+  
+  #login-form {
+    margin-top: 10px;
+  }
+  
+  #login-form p a,#register-form p a{
+    
+    padding-top: 10px;
+    color: #ffffff;
+  }
+  #login-form p a:hover,#register-form p a:hover{
+    
+    padding-top: 10px;
+    color: #910000;
+  }
+  #login-form p {
+    
+    padding-top: 10px;
+    color: #fff;
+  }
+  #login-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5e0606;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #login-form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #5e0606;
+  }
+/* halaman game */
+#halaman_game{
+   
+    max-width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(./bgmarvel.jpeg);
+    background-size: cover;
+    background-repeat:repeat;
+    background-position: center top;
+  }
+  #halaman_koleksi{
+   
+    max-width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(./bgmarvel.jpeg);
+    background-size: cover;
+    
+    background-position: center top;
+  }
+  #header_game {
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    width: 290px;
+    height: 390px;
+    border: 10px solid rgba(238, 255, 0, 0);
+    overflow: hidden;
+}
+.slideshow-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.slideshow-container img.active {
+    opacity: 1;
+}
+
+#halaman_register{
+   
+    max-width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(./bgmarvel.jpeg);
+    background-size: cover;
+    background-repeat:repeat;
+    background-position: center top;
+  }
+  #header_register {
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+      main .div_tentang h1{
+        text-shadow: 3px 3px 6px black;
+        padding-left: 53px;
+        font-family: 'fontbaru', sans-serif;
+        letter-spacing: 2px;
+    color: rgb(233, 223, 223);
+    text-align: center;
+  }
+  main .div_tentang h2{
+    text-align: center;
+    text-shadow: 3px 3px 6px black;
+    font-size: 8;
+    color: rgb(175, 175, 175);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  nav ul li a #login{
+    padding-right: 50px;
+  }
+  .gacha-container {
+    display: grid;
+    grid-template-areas:
+      "notification"
+      "button";
+    grid-template-rows: auto 1fr;
+    height: 30vh;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .notification {
+    
+    text-align: center;
+    grid-area: notification;
+    position: relative;
+     
+    background-color: #000000;
+    border: 1px solid #000;
+    padding: 10px;
+    z-index: 700;
+    color: white;
+    letter-spacing: 3px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+    margin-top: 180px;
+    
+  }
+
+  
+  .gacha-button {
+    grid-area: button;
+    background: linear-gradient(to right, #5e0606, #a72222);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'fontbaru', sans-serif;
+    letter-spacing: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    margin-bottom: 50px;
+   
+  }
+  
+  .gacha-button:hover{
+    background: rgb(216, 211, 211);
+    color: black;
+    
+  }
+  
+  #register-form {
+    margin-top: 10px;
+  }
+  
+  #register-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5e0606;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #register-form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #5e0606;
+  }
+
+  #kotak_masuk {
+    padding-bottom: 10px;
+    display: none;
+    position: fixed;
+    margin-top: -110px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    background-color:#5809097e;
+    
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    z-index: 9999;
+    
+
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+  
+#select_box {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center;
+}
+#kotak_batal {
+  color:rgb(224, 224, 224);
+  float: left;
+  background-color:transparent;
+  border: none;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+#kotak_batal:hover{
+ 
+ color: white;
+}
+#kotak_masuk_kalimat p#judul {
+  text-shadow: 5px 5px 6px #000000;
+  color: rgb(204, 204, 204);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  background-color: #58090971;
+  padding-bottom: 0px;
+  letter-spacing: 5px;
+}
+#kotak_masuk_kalimat p{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 12px;
+  background-color:#58090971;
+  margin-bottom: 20px;
+  
+  text-shadow: 5px 5px 6px #000000;
+color: rgb(197, 197, 197);}
+
+#select_box {
+  background-color: #580909;
+  color: wheat;
+  font-size: 15px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+  padding: 10px;
+}
+#select_box:hover{
+  background-color: black;
+  color: white;
+}
+
+#select_box_container {
+  display: flex;
+  align-items: center;
+}
+
+#select_box {
+  margin-right: 10px;
+}
+
+#confirm_button {
+  padding: 10px;
+  background-color: #000200;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#confirm_button:hover {
+  background-color:#580909;
+}
+#kotak_masuk, #kotak_masuk_kalimat p {
+  background-color:#58090944;
+}
+#kotak_masuk_kalimat p#judul{
+  background-color:#58090936;
+}
+#register-form p{
+color: white;
+}
+
+#welcome  {
+  position: relative;
+  margin: auto;
+  
+  top: 0;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-50%);
+  background-color:transparent;
+  color: white;
+  padding-top: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  
+  line-height: 0.5;
+}
+
+
+#selamat {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(121, 4, 4);
+  font-family: 'fontbaru', sans-serif;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 10px;
+}
+
+#nama {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(121, 4, 4);
+  font-family: 'fontbaru', sans-serif;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 10px;;
+}
+
+#judul_koleksi{
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(121, 4, 4);
+  font-family: 'fontbaru', sans-serif;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 10px;
+  
+}
+  #judul_koleksi:hover{
+    font-size: 55px;
+  transition: font-size 0.3s ease-in-out;}
+
+.container_koleksi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start; 
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.image_container_koleksi{
+  width: 19%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border:none;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.image_container_koleksi img {
+  max-width: 90%;
+  transition: max-width 0.3s ease-in-out;
+  
+}
+.image_container_koleksi img:hover{
+
+  max-width: 100%;}
+
+.sorting {
+  font-size: 16px;
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  padding-bottom: 20px;
+  
+}
+
+.sorting:hover {
+  transition: font-size 0.3s ease-in-out;
+  font-size: 20px;
+  
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 10px;
+  font-family: 'fontbaru', sans-serif;
+}

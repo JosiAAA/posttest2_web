@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Game Koleksi Kartu</title>
+</head>
+
+<body id="halaman_register">
+    <header id="header_register">
+        <nav>
+            <ul>
+              <li><a class="animate__animated animate__fadeInUp" href="home.html">Home</a></li>
+              <li><a class="animate__animated animate__fadeInUp" href="login.html" id="login_button_regis">Login</a></li>
+              <li><a class="animate__animated animate__fadeInUp" href="register.html" id="register_button">Register</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <main>
+            <form class="animate__animated animate__fadeInUp" id="register-form">
+                <label for="username">Username:</label>
+                <input type="text" id="register_username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="register_password" name="password" required>
+                <label for="showpass">Tampilkan Password</label>
+                <input type = "checkbox" id="showpass">
+                <input type="submit" value="DAFTAR" id="tombol_regis" >
+                <p>Sudah Punya Akun ? <a href="login.html">Login</a></p>
+           </form>
+           <div id="kotak_masuk">
+            <div><button id="kotak_batal">X</button></div>
+            <div id="kotak_masuk_kalimat">
+                <p id="judul">SYARAT DAN KETENTUAN</p>
+                <p>Game Koleksi Kartu merupakan game yang hanya bisa dimainkan oleh pengguna yang telah mendaftar dan memiliki akun resmi.
+                    Setiap pengguna bertanggung jawab atas keamanan akun mereka. 
+                <br> Pengguna dilarang untuk memberikan informasi akun mereka, seperti password dan email, kepada pihak lain.                      
+
+                <br>  Syarat dan ketentuan ini dapat berubah sewaktu-waktu tanpa pemberitahuan terlebih dahulu. Pengguna diharapkan untuk memperhatikan dan mengikuti setiap perubahan yang terjadi.
+                <br>
+                <br> Dengan menyetujui syarat dan ketentuan ini, pengguna dianggap telah membaca dan memahami setiap isi yang terkandung di dalamnya
+                    </p>
+               
+                
+                   
+            </div>
+            <div id="select_box_container">
+                <select id="select_box">
+                    <option value="ya">Setuju</option>
+                    <option value="tidak">Tidak Setuju</option>
+                </select>
+                <input type="submit" value="Confirm" id="confirm_button">
+            </div>
+        </div>
+        </main>
+<footer>
+    <div class="footer">
+        <p>
+            &copy;2023 GameKoleksiKartu. All Right Reserved
+        </p>
+    </div>
+</footer>
+</body>
+<script src="regist.js"></script>
+</html>

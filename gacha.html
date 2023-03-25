@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body id="halaman_game">
+    <header id="header_game">
+        <nav>
+            <ul>
+              <li><a class="animate__animated animate__fadeInUp" href="home.html" id="log_out">Log Out</a></li>
+              <li><a class="animate__animated animate__fadeInUp" href="gacha.html "id="gacha_button">Gacha</a></li>
+              <li><a class="animate__animated animate__fadeInUp" href="koleksi.html">Collection</a></li>
+            </ul>
+          </nav>
+            
+    </header>
+    <div id="welcome" class="animate__animated animate__fadeInUp">
+      <span id="selamat">Selamat Datang</span><br>
+      <span id="nama"></span>
+    </div>
+    
+        <div class="animate__animated animate__fadeInUp slideshow-container ">
+            <img class="active" src="https://tse1.mm.bing.net/th?id=OIP.HcWb_xeBMHqv9pUlwuoFZAHaKR&pid=Api&P=0.jpg" alt="Punisher">
+            <img class="slides" src="https://tse4.mm.bing.net/th?id=OIP.TmxkgQLTnbY5MjR0L3cWpAHaKT&pid=Api&P=0.jpg" alt="Magneto">
+            <img class="slides" src="https://tse2.mm.bing.net/th?id=OIP.XCuk_ppTiEZ62wfOj3RSNAAAAA&pid=Api&P=0.jpg" alt="Wolverine">
+            <img class="slides" src="https://i.pinimg.com/originals/02/5b/69/025b69553973fbc40b68b11de1624a9f.jpg" alt="Thor">
+            <img class="slides" src="https://i.pinimg.com/736x/12/30/8c/12308c49f64ef0b6c1e1cbed8038c19e.jpg" alt="Nick Fury">
+            <img class="slides" src="https://beckett-www.s3.amazonaws.com/news/news-content/uploads/2022/08/Black-Panther-1990-Impel-Marvel-Universe.jpg" alt="Black Panther">
+            <img class="slides" src="spiderman.jpg" alt="Spiderman">
+            <img src="hulk.jpg" alt="The Hulk">
+            <img src="capamr.jpg" alt="Captain America">
+        </div>
+        
+        <div class="gacha-container">
+            <button class="animate__animated animate__fadeInUp gacha-button">Gacha</button>
+          </div>
+          <div class="animate__animated animate__fadeInUp notification" style="display: none;">
+</div>
+
+          <script>
+    var slideIndex = 0;
+      let isGachaClicked = false;
+      let timeout;
+
+      function showSlides() {
+        if (!isGachaClicked) {
+          var i;
+          var slides = document.getElementsByClassName("slideshow-container")[0].getElementsByTagName("img");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].className = "";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          slides[slideIndex - 1].className = "active";
+          timeout = setTimeout(showSlides, 2000);
+        }
+      }
+
+      showSlides();
+
+      function speedSlides() {
+        var i;
+        var slides = document.getElementsByClassName("slideshow-container")[0].getElementsByTagName("img");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].className = "";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].className = "active";
+        timeout = setTimeout(speedSlides, 500);
+      }
+
+      const slideshowContainer = document.querySelector('.slideshow-container');
+      const gachaButton = document.querySelector('.gacha-button');
+
+      function handleGachaButton() {
+        if (isGachaClicked) {
+          isGachaClicked = false;
+          showSlides();
+        } else {
+          isGachaClicked = true;
+          clearTimeout(timeout);
+          speedSlides();
+          setTimeout(() => {
+            clearTimeout(timeout);
+            gachaButton.style.display = "block";
+            
+            const notification = document.createElement('div');
+            notification.classList.add('notification');
+            const activeImage = slideshowContainer.querySelector('.active');
+            notification.style.color = 'white';
+const activeImageAlt = activeImage.getAttribute('alt');
+notification.innerHTML = `Selamat Anda Mendapatkan ${activeImageAlt}`;
+const allCards = JSON.parse(localStorage.getItem('cards')) || [];
+const newCard = { name: activeImageAlt, id: allCards.length + 1 };
+allCards.push(newCard);
+localStorage.setItem('cards', JSON.stringify(allCards));
+
+            document.body.appendChild(notification);
+            setTimeout(() => {
+              notification.remove();
+            }, 5000);
+ 
+            
+          }, 5000);
+          gachaButton.style.display = "none";
+        }
+      }
+gachaButton.addEventListener('click', handleGachaButton);
+document.getElementById("log_out").addEventListener("click", function(event){
+			event.preventDefault();
+			var result = confirm("Apakah Anda yakin ingin meninggalkan permainan?");
+			if (result) {
+				window.location.href = "home.html";
+			}
+		});
+    const current_user = sessionStorage.getItem("current_user");
+
+  document.getElementById('nama').textContent = current_user.toUpperCase();
+        </script>
+</body>
+</html>
