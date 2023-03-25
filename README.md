@@ -10,8 +10,10 @@
 
 #Input yang ditampilkan dari local storage adalah input berupa hasil dari gacha yang dilakukan oleh user, misalkan yang didapat dari hasil gacha adalah kartu Thor
 #Maka nama Thor akan dijadikan sebagai input yang kemudian dibaca pada menu collection sebagai file gambar, sehingga hasil input dari thor adalah gambar Thor
+
 ![image](https://user-images.githubusercontent.com/102679486/227724726-1936cbfd-6114-423c-bb69-647e36c818a4.png)
 
 #Hasil :
+
 ![image](https://user-images.githubusercontent.com/102679486/227724751-cfdf520e-2365-457c-b432-ee467c306c98.png)
 
